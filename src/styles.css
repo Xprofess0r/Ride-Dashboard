@@ -1,0 +1,173 @@
+.container {
+    padding: 20px;
+    
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  body.dark {
+    background: #0f172a;
+    color: white;
+  }
+  
+  body.light {
+    background: #f1f5f9;
+    color: black;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  select, input {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+  }
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .kpi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .kpi-item {
+    flex: 1;
+  }
+  
+  .kpi-item h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .kpi-item p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    color: #94a3b8;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #334155;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .tabs button:hover {
+    background: #475569;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .filters {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      flex-wrap: nowrap;
+    }
+  
+    .card {
+      flex: 1;
+    }
+  }
+
+  /* DARK MODE */
+body.dark .card {
+    background: #1e293b;
+    color: white;
+  }
+  
+  /* LIGHT MODE */
+  body.light .card {
+    background: white;
+    color: black;
+  }
+
+  /* DARK MODE */
+body.dark .tabs button {
+    background: #334155;
+    color: white;
+  }
+  
+  /* LIGHT MODE */
+  body.light .tabs button {
+    background: #e2e8f0;
+    color: black;
+  }
+
+  body.light label {
+    color: black;
+  }
+  
+  body.dark label {
+    color: white;
+  }
+
+  body.dark .subtitle {
+    color: #94a3b8;
+  }
+  
+  body.light .subtitle {
+    color: #475569;
+  }
+
+  body.light select,
+body.light input {
+  background: white;
+  color: black;
+}
+
+body.dark select,
+body.dark input {
+  background: #334155;
+  color: white;
+}
+
