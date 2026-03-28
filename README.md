@@ -18,19 +18,29 @@ Vercel (Deployment)
 🚀 Features
 
 📊 Surge vs Hour trend analysis
+
 📅 Weekday-based demand insights
+
 ⚡ Peak vs Non-Peak comparison
+
 📈 Distance vs Fare scatter visualization
+
 🗺️ Geospatial mapping of ride locations
+
 🎛 Interactive filters (hour, surge toggle)
+
 🌙 Dark/Light mode UI
+
 🤖 ML-based surge prediction (Logistic Regression)
 
 📊 Key Insights
 
 Surge pricing peaks during morning and evening rush hours
+
 High-demand zones are concentrated in central urban areas
+
 Peak hours significantly increase surge probability
+
 Short-distance rides show higher fare variability
 
 🤖 Machine Learning
@@ -38,8 +48,11 @@ Short-distance rides show higher fare variability
 A Logistic Regression model was built to predict surge pricing probability using features like:
 
 Hour of day
+
 Weekday
+
 Trip distance
+
 Peak-hour indicator
 
 📸 Screenshots
@@ -52,7 +65,9 @@ Peak-hour indicator
 💡 Learnings
 
 End-to-end data pipeline (cleaning → analysis → visualization → deployment)
+
 Handling large datasets efficiently in frontend
+
 Translating data insights into interactive UI components
 
 👤 Author
