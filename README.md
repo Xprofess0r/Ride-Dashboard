@@ -1,7 +1,7 @@
 🚕 Ride Fare Surge Analytics Dashboard
 🔗 Live Demo
 
-👉 https://ride-dashboard-three.vercel.app/
+👉 https://ride-dashboard-new.vercel.app/
 
 📌 Overview
 
