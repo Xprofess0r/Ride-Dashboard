@@ -8,12 +8,15 @@
 This project analyzes ride-hailing data to identify surge pricing patterns and builds an interactive dashboard for exploring demand trends, pricing behavior, and geographic hotspots.
 
 🛠 Tech Stack
+
 Python (Pandas, NumPy, Scikit-learn)
 React.js
 Recharts
 Leaflet (Maps)
 Vercel (Deployment)
+
 🚀 Features
+
 📊 Surge vs Hour trend analysis
 📅 Weekday-based demand insights
 ⚡ Peak vs Non-Peak comparison
@@ -22,11 +25,14 @@ Vercel (Deployment)
 🎛 Interactive filters (hour, surge toggle)
 🌙 Dark/Light mode UI
 🤖 ML-based surge prediction (Logistic Regression)
+
 📊 Key Insights
+
 Surge pricing peaks during morning and evening rush hours
 High-demand zones are concentrated in central urban areas
 Peak hours significantly increase surge probability
 Short-distance rides show higher fare variability
+
 🤖 Machine Learning
 
 A Logistic Regression model was built to predict surge pricing probability using features like:
@@ -43,9 +49,11 @@ Peak-hour indicator
 <img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/d46a2e6b-15d7-4991-93c1-d9951da8c463" />
 
 💡 Learnings
+
 End-to-end data pipeline (cleaning → analysis → visualization → deployment)
 Handling large datasets efficiently in frontend
 Translating data insights into interactive UI components
 
 👤 Author
+
 Shashi Bhushan
