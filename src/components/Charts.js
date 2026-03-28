@@ -93,10 +93,10 @@ function Charts({ data }) {
       <div>
         <h3>Surge vs Hour</h3>
         <ResponsiveContainer width="100%" height={250}>
-          <LineChart data={chartData}>
+          <LineChart data={chartData} margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="hour" />
-            <YAxis />
+            <YAxis width={30}/>
             <Tooltip />
             <Line type="monotone" dataKey="surge" stroke="#22c55e" />
           </LineChart>
@@ -107,9 +107,9 @@ function Charts({ data }) {
       <div>
         <h3>Peak vs Non-Peak</h3>
         <ResponsiveContainer width="100%" height={200}>
-          <BarChart data={peakData}>
+          <BarChart data={peakData} margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
             <XAxis dataKey="type" />
-            <YAxis />
+            <YAxis width={30} />
             <Tooltip />
             <Bar dataKey="value" fill="#3b82f6" />
           </BarChart>
@@ -120,9 +120,9 @@ function Charts({ data }) {
       <div>
         <h3>Surge by Weekday</h3>
         <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={weekdayChart}>
+          <BarChart data={weekdayChart} margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
             <XAxis dataKey="day" />
-            <YAxis />
+            <YAxis width={30}/>
             <Tooltip />
             <Bar dataKey="surge" fill="#f59e0b" />
           </BarChart>
@@ -133,9 +133,9 @@ function Charts({ data }) {
       <div>
         <h3>Distance vs Fare</h3>
         <ResponsiveContainer width="100%" height={300}>
-          <ScatterChart>
+          <ScatterChart margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
             <XAxis dataKey="distance_km" name="Distance (km)" />
-            <YAxis dataKey="fare_amount" name="Fare ($)" />
+            <YAxis dataKey="fare_amount" name="Fare ($)" width={30}/>
             <Tooltip />
 
             <Scatter

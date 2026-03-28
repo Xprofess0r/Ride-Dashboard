@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import data from "./data/data.json";
+import data from "./data/data_ml.json";
 
 import MapView from "./components/MapView";
 import Charts from "./components/Charts";
@@ -53,13 +53,30 @@ function App() {
 
       {/* Tabs + Theme */}
       <div className="tabs">
-        <button onClick={() => setActiveTab("overview")}>Overview</button>
-        <button onClick={() => setActiveTab("map")}>Map</button>
-        <button onClick={() => setActiveTab("insights")}>Insights</button>
-
-        <button onClick={() => setDarkMode(!darkMode)}>
-  {darkMode ? "🌙 Dark" : "☀️ Light"}
-</button>
+      <button
+        className={activeTab === "overview" ? "active" : ""}
+        onClick={() => setActiveTab("overview")}
+        >
+        Overview
+      </button>
+      <button
+       className={activeTab === "map" ? "active" : ""}
+       onClick={() => setActiveTab("map")}
+         >Map
+        </button>
+        <button
+         className={activeTab === "insights" ? "active" : ""}
+         onClick={() => setActiveTab("insights")}
+        >Insights
+        </button>
+        <div className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
+         <div className={`toggle-container ${darkMode ? "dark" : "light"}`}>
+         <div className="toggle-icon sun">☀️</div>
+         <div className="toggle-icon moon">🌙</div>
+         <div className={`toggle-ball ${darkMode ? "right" : "left"}`} />
+      </div>
+</div>
+      
       </div>
 
       {/* TAB CONTENT */}
@@ -90,9 +107,15 @@ function App() {
             <li>High-demand zones concentrated in central NYC</li>
             <li>Peak hours show significantly higher pricing</li>
             <li>Short-distance rides show higher fare variability</li>
+            <li>ML model predicts surge likelihood based on time and distance</li>
+            <li>Peak hours significantly increase surge probability</li>
           </ul>
         </div>
       )}
+      {/* FOOTER */}
+      <div className="footer">
+      Built by Shashi Bhushan • Ride Fare Analytics Dashboard
+      </div>
     </div>
   );
 }

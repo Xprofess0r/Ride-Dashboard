@@ -8,6 +8,9 @@ function KPIs({ data }) {
     const surgePercent = (
       (data.filter(d => d.is_surge).length / data.length) * 100
     ).toFixed(1);
+
+    const avgProb =
+  data.reduce((sum, d) => sum + d.surge_prob, 0) / data.length;
   
     return (
         <div className="kpi-container">
@@ -24,6 +27,10 @@ function KPIs({ data }) {
         <div className="kpi-item">
           <h3>🚗 Trips</h3>
           <p>{data.length}</p>
+        </div>
+        <div className="kpi-item">
+        <h3>🤖 Surge Prob</h3>
+        <p>{(avgProb * 100).toFixed(1)}%</p>
         </div>
       </div>
     );
