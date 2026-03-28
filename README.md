@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+🚕 Ride Fare Surge Analytics Dashboard
+🔗 Live Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+👉 https://your-vercel-link.vercel.app
 
-## Available Scripts
+📌 Overview
 
-In the project directory, you can run:
+This project analyzes ride-hailing data to identify surge pricing patterns and builds an interactive dashboard for exploring demand trends, pricing behavior, and geographic hotspots.
 
-### `npm start`
+🛠 Tech Stack
+Python (Pandas, NumPy, Scikit-learn)
+React.js
+Recharts
+Leaflet (Maps)
+Vercel (Deployment)
+🚀 Features
+📊 Surge vs Hour trend analysis
+📅 Weekday-based demand insights
+⚡ Peak vs Non-Peak comparison
+📈 Distance vs Fare scatter visualization
+🗺️ Geospatial mapping of ride locations
+🎛 Interactive filters (hour, surge toggle)
+🌙 Dark/Light mode UI
+🤖 ML-based surge prediction (Logistic Regression)
+📊 Key Insights
+Surge pricing peaks during morning and evening rush hours
+High-demand zones are concentrated in central urban areas
+Peak hours significantly increase surge probability
+Short-distance rides show higher fare variability
+🤖 Machine Learning
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A Logistic Regression model was built to predict surge pricing probability using features like:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hour of day
+Weekday
+Trip distance
+Peak-hour indicator
+📸 Screenshots
 
-### `npm test`
+<img width="1880" height="976" alt="image" src="https://github.com/user-attachments/assets/0f369770-dd1b-4c8d-b891-1831c682ee9c" />
+<img width="1916" height="810" alt="image" src="https://github.com/user-attachments/assets/8d4ee0df-f7ed-4780-adda-3f63ca2292e5" />
+<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/d46a2e6b-15d7-4991-93c1-d9951da8c463" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+💡 Learnings
+End-to-end data pipeline (cleaning → analysis → visualization → deployment)
+Handling large datasets efficiently in frontend
+Translating data insights into interactive UI components
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 Author
+Shashi Bhushan
